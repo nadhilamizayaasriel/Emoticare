@@ -12,9 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmotiCare"
         tools:targetApi="31">
-        <activity
-            android:name=".splash.SplashActivty"
-            android:exported="false" />
+
         <activity
             android:name=".register.RegisterActivity"
             android:exported="false" />
@@ -22,7 +20,7 @@
             android:name=".login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".onboarding.ViewPagerAdapterr"
+            android:name=".onboarding.ViewPagerAdapter"
             android:exported="false" />
         <activity
             android:name=".onboarding.OnboardingActivity"
@@ -30,15 +28,18 @@
         <activity
             android:name=".home.HomeActivity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
+            <activity
+                android:name=".splash.SplashActivty"
+                android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"/>
     </application>
 
 </manifest>

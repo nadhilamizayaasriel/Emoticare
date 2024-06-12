@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
@@ -41,7 +42,7 @@ class OnboardingActivity : AppCompatActivity() {
                     currentPage = 0
                 }
                 viewPager.setCurrentItem(currentPage++, true)
-                handler.postDelayed(this, 3000) // Change image every 3 seconds
+                handler.postDelayed(this, 3000)
             }
         }
         handler.post(runnable)
@@ -49,11 +50,14 @@ class OnboardingActivity : AppCompatActivity() {
         btnLogIn.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
+            Log.d("btnLogIn", "aku diklik")
         }
 
         btnSignIn.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
+            Log.d("btnSignIn", "aku diklik")
+
         }
     }
 
