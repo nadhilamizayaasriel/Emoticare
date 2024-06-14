@@ -14,6 +14,7 @@ import com.example.emoticare.R
 import com.example.emoticare.data.api.ApiConfig
 import com.example.emoticare.data.api.ChatAdapter
 import com.example.emoticare.data.api.ChatResponse
+import com.example.emoticare.data.api.Message
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.Call
@@ -62,7 +63,7 @@ class ChatFragment : Fragment() {
             if (messageText.isNotEmpty()) {
                 sendMessage(messageText)
                 messageInput.setText("")
-                chatAdapter.addMessage(messageText)
+//                chatAdapter.addMessage(Message(messageText, true))
             }
         }
     }
@@ -77,7 +78,7 @@ class ChatFragment : Fragment() {
                 if (response.isSuccessful && response.body() != null) {
                     val chatResponse = response.body()
                     chatResponse?.let {
-                        it.response?.let { it1 -> updateChat(it1) }
+                        it.response?.let { it1 -> updateChat(it1, true) }  // True for responses received from server
                     }
                 } else {
                     Log.e("ChatFragment", "Response error: ${response.errorBody()?.string()}")
@@ -88,12 +89,42 @@ class ChatFragment : Fragment() {
                 Log.e("ChatFragment", "Network error: ${t.message}")
             }
         })
+        updateChat(message, false)  // False for messages sent by the user
     }
 
-    private fun updateChat(response: String) {
-        chatAdapter.addMessage(response)
+    private fun updateChat(response: String, isSent: Boolean) {
+        val message = Message(response, isSent)
+        chatAdapter.addMessage(message)
         recyclerView.scrollToPosition(chatAdapter.itemCount - 1)
     }
+
+//    private fun sendMessage(message: String) {
+//        val mediaType = "application/json; charset=utf-8".toMediaType()
+//        val requestBody = "{\"message\":\"$message\"}".toRequestBody(mediaType)
+//
+//        val call = ApiConfig.getApiService().sendChatResponse(requestBody)
+//        call.enqueue(object : Callback<ChatResponse> {
+//            override fun onResponse(call: Call<ChatResponse>, response: Response<ChatResponse>) {
+//                if (response.isSuccessful && response.body() != null) {
+//                    val chatResponse = response.body()
+//                    chatResponse?.let {
+//                        it.response?.let { it1 -> updateChat(it1) }
+//                    }
+//                } else {
+//                    Log.e("ChatFragment", "Response error: ${response.errorBody()?.string()}")
+//                }
+//            }
+//
+//            override fun onFailure(call: Call<ChatResponse>, t: Throwable) {
+//                Log.e("ChatFragment", "Network error: ${t.message}")
+//            }
+//        })
+//    }
+//
+//    private fun updateChat(response: String) {
+//        chatAdapter.addMessage(response)
+//        recyclerView.scrollToPosition(chatAdapter.itemCount - 1)
+//    }
 
     companion object {
         @JvmStatic
