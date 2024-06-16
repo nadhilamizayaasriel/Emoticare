@@ -58,6 +58,7 @@ class ChatFragment : Fragment() {
         recyclerView.adapter = chatAdapter
         recyclerView.layoutManager = LinearLayoutManager(context)
 
+
         sendButton.setOnClickListener {
             val messageText = messageInput.text.toString()
             if (messageText.isNotEmpty()) {
