@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.emoticare.R
 import com.example.emoticare.data.api.ApiConfig
 import com.example.emoticare.data.api.ChatAdapter
-import com.example.emoticare.data.api.ChatResponse
+import com.example.emoticare.data.response.ChatResponse
 import com.example.emoticare.data.api.Message
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody

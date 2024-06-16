@@ -1,4 +1,4 @@
-package com.example.emoticare.data.api
+package com.example.emoticare.data.response
 import com.google.gson.annotations.SerializedName
 data class ChatResponse (
     @field:SerializedName("response")
