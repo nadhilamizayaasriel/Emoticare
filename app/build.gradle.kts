@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -6,7 +8,6 @@ plugins {
 android {
     namespace = "com.example.emoticare"
     compileSdk = 34
-
     defaultConfig {
         applicationId = "com.example.emoticare"
         minSdk = 31
@@ -65,5 +66,4 @@ dependencies {
 
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
-
 }

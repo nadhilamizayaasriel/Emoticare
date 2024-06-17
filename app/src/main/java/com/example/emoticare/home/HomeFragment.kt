@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import android.widget.CalendarView
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -33,7 +35,20 @@ class HomeFragment : Fragment() {
         viewModel = LoginViewModel(Injection.provideRepository(requireContext()))
         setupRecyclerView()
         setupCalendar()
+        historyButton(view)
         return view
+    }
+
+    private fun historyButton(view: View) {
+        val historyButton = view.findViewById<ImageButton>(R.id.history)
+        historyButton?.setOnClickListener {
+            // Make sure the container ID is correct, it should be the ID of your fragment container in the activity's layout
+            val fragment = HistoryFragment()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.container, fragment) // Use the correct ID for your fragment container
+                .addToBackStack(null)
+                .commit()
+        }
     }
 
     private fun setupRecyclerView() {
@@ -42,7 +57,6 @@ class HomeFragment : Fragment() {
         articlesRecyclerView.adapter =
             ArticlesAdapter(listOf("Article 1", "Article 2", "Article 3"))
     }
-
     private fun setupCalendar() {
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
             val formattedDate = String.format("%04d-%02d-%02d", year, month + 1, dayOfMonth)
@@ -60,7 +74,7 @@ class HomeFragment : Fragment() {
 
     private fun checkAndSetMood(mood: String, date: String) {
         val apiService = ApiConfig.getAuthenticatedApiService(viewModel.getSession().token)
-        apiService.getTodayMood().enqueue(object : Callback<MoodResponse> {
+        apiService.getTodayMood(date).enqueue(object : Callback<MoodResponse> {
             override fun onResponse(call: Call<MoodResponse>, response: Response<MoodResponse>) {
                 if (response.isSuccessful) {
                     updateMood(mood, date)
@@ -70,43 +84,35 @@ class HomeFragment : Fragment() {
             }
 
             override fun onFailure(call: Call<MoodResponse>, t: Throwable) {
-                Toast.makeText(context, "Error checking today's mood: ${t.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Error checking mood for $date: ${t.message}", Toast.LENGTH_SHORT).show()
             }
         })
     }
 
     private fun updateMood(mood: String, date: String) {
         val apiService = ApiConfig.getAuthenticatedApiService(viewModel.getSession().token)
-        apiService.updateMood(date, mood).enqueue(object : Callback<MoodResponse> {
-            override fun onResponse(call: Call<MoodResponse>, response: Response<MoodResponse>) {
-                if (response.isSuccessful) {
-                    Toast.makeText(context, "Mood updated successfully!", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(context, "Failed to update mood: ${response.errorBody()?.string()}", Toast.LENGTH_SHORT).show()
-                }
-            }
-
-            override fun onFailure(call: Call<MoodResponse>, t: Throwable) {
-                Toast.makeText(context, "Network error: ${t.message}", Toast.LENGTH_SHORT).show()
-            }
-        })
+        apiService.updateMood(date, mood).enqueue(handleMoodResponse("updated"))
     }
 
     private fun createMood(mood: String, date: String) {
         val apiService = ApiConfig.getAuthenticatedApiService(viewModel.getSession().token)
-        apiService.createMood(date, mood).enqueue(object : Callback<MoodResponse> {
+        apiService.createMood(date, mood).enqueue(handleMoodResponse("saved"))
+    }
+
+    private fun handleMoodResponse(action: String): Callback<MoodResponse> {
+        return object : Callback<MoodResponse> {
             override fun onResponse(call: Call<MoodResponse>, response: Response<MoodResponse>) {
                 if (response.isSuccessful) {
-                    Toast.makeText(context, "Mood saved successfully!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Mood $action successfully!", Toast.LENGTH_SHORT).show()
                 } else {
-                    Toast.makeText(context, "Failed to save mood: ${response.errorBody()?.string()}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Failed to $action mood: ${response.errorBody()?.string()}", Toast.LENGTH_SHORT).show()
                 }
             }
 
             override fun onFailure(call: Call<MoodResponse>, t: Throwable) {
                 Toast.makeText(context, "Network error: ${t.message}", Toast.LENGTH_SHORT).show()
             }
-        })
+        }
     }
 
 }

@@ -49,7 +49,12 @@ interface ApiService {
         @Path("mood") mood: String
     ): Call<MoodResponse>
 
-    @GET("mood/today")
+    @GET("mood/{date}")
     fun getTodayMood(
+        @Path("date") date: String
     ): Call<MoodResponse>
+
+    @GET("mood")
+    fun getAllMoods(): Call<List<MoodResponse>>
+
 }

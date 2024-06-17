@@ -1,4 +1,4 @@
-package com.example.emoticare.data.api
+package com.example.emoticare.data.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.emoticare.R
+import com.example.emoticare.data.api.Message
 
 class ChatAdapter(private val messages: MutableList<Message>) : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
     override fun getItemViewType(position: Int): Int {
