@@ -44,27 +44,28 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupCalendar() {
-        calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
+        calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
+            val formattedDate = String.format("%04d-%02d-%02d", year, month + 1, dayOfMonth)
             val options = arrayOf("Natural", "Happy", "Sad")
             AlertDialog.Builder(context).apply {
-                setTitle("Select Your Mood on $dayOfMonth/${month + 1}/$year")
+                setTitle("Select Your Mood on $formattedDate")
                 setItems(options) { dialog, which ->
                     val selectedMood = options[which].toLowerCase()
-                    checkAndSetMood(selectedMood)
+                    checkAndSetMood(selectedMood, formattedDate)
                 }
                 show()
             }
         }
     }
 
-    private fun checkAndSetMood(mood: String) {
+    private fun checkAndSetMood(mood: String, date: String) {
         val apiService = ApiConfig.getAuthenticatedApiService(viewModel.getSession().token)
         apiService.getTodayMood().enqueue(object : Callback<MoodResponse> {
             override fun onResponse(call: Call<MoodResponse>, response: Response<MoodResponse>) {
                 if (response.isSuccessful) {
-                    updateMood(mood)
+                    updateMood(mood, date)
                 } else {
-                    createMood(mood)
+                    createMood(mood, date)
                 }
             }
 
@@ -74,9 +75,9 @@ class HomeFragment : Fragment() {
         })
     }
 
-    private fun updateMood(mood: String) {
+    private fun updateMood(mood: String, date: String) {
         val apiService = ApiConfig.getAuthenticatedApiService(viewModel.getSession().token)
-        apiService.updateMood(mood).enqueue(object : Callback<MoodResponse> {
+        apiService.updateMood(date, mood).enqueue(object : Callback<MoodResponse> {
             override fun onResponse(call: Call<MoodResponse>, response: Response<MoodResponse>) {
                 if (response.isSuccessful) {
                     Toast.makeText(context, "Mood updated successfully!", Toast.LENGTH_SHORT).show()
@@ -91,9 +92,9 @@ class HomeFragment : Fragment() {
         })
     }
 
-    private fun createMood(mood: String) {
+    private fun createMood(mood: String, date: String) {
         val apiService = ApiConfig.getAuthenticatedApiService(viewModel.getSession().token)
-        apiService.createMood(mood).enqueue(object : Callback<MoodResponse> {
+        apiService.createMood(date, mood).enqueue(object : Callback<MoodResponse> {
             override fun onResponse(call: Call<MoodResponse>, response: Response<MoodResponse>) {
                 if (response.isSuccessful) {
                     Toast.makeText(context, "Mood saved successfully!", Toast.LENGTH_SHORT).show()

@@ -37,15 +37,19 @@ interface ApiService {
         @Field("password") password: String
     ): LoginResponse
 
-    @POST("mood/create/{mood}")
+    @POST("mood/create/{date}/{mood}")
     fun createMood(
-//        @Path("date") date: String,
+        @Path("date") date: String,
         @Path("mood") mood: String
     ): Call<MoodResponse>
 
-    @PUT("mood/update/{mood}")
-    fun updateMood(@Path("mood") mood: String): Call<MoodResponse>
+    @PUT("mood/update/{date}/{mood}")
+    fun updateMood(
+        @Path("date") date: String,
+        @Path("mood") mood: String
+    ): Call<MoodResponse>
 
     @GET("mood/today")
-    fun getTodayMood(): Call<MoodResponse>
+    fun getTodayMood(
+    ): Call<MoodResponse>
 }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/onboarding_image_5"
+        android:src="@drawable/onboarding_image_1"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,14 +29,14 @@
         android:id="@+id/credentialsLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/login_rectangle"
         android:orientation="vertical"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/textView"
@@ -45,8 +44,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="24dp"
+            android:layout_marginTop="10dp"
             android:text="@string/login"
-            android:textColor="#000000"
+            android:textColor="@color/blue"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -58,6 +58,7 @@
             android:hint="@string/hint_email"
             android:paddingStart="20dp"
             android:drawablePadding="5dp"
+            android:textColor="@color/black"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -68,7 +69,8 @@
             android:paddingStart="20dp"
             android:drawablePadding="5dp"
             android:hint="@string/hint_pass"
-            android:inputType="textPassword"/>
+            android:textColor="@color/black"
+            android:inputType="textPassword" />
 
         <TextView
             android:id="@+id/forgetPass"
@@ -77,6 +79,7 @@
             android:layout_gravity="end"
             android:layout_marginBottom="16dp"
             android:text="@string/forget_pass"
+            android:textSize="12sp"
             android:textColor="@color/blue" />
 
         <Button
@@ -90,13 +93,29 @@
             android:text="@string/login"
             android:textColor="@color/white" />
 
-        <TextView
-            android:id="@+id/have_account"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/have_account"
-            android:textColor="@color/blue" />
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:id="@+id/have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/have_account"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/signin"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+        </LinearLayout>
 
     </LinearLayout>
 

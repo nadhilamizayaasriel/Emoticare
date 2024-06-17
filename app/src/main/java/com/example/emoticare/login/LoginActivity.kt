@@ -3,19 +3,13 @@ package com.example.emoticare.login
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.emoticare.MainActivity
-import com.example.emoticare.R
 import com.example.emoticare.ViewModelFactory
 import com.example.emoticare.data.pref.UserModel
 import com.example.emoticare.databinding.ActivityLoginBinding
-import com.example.emoticare.home.HomeActivity
 
 class LoginActivity : AppCompatActivity() {
     private val viewModel by viewModels<LoginViewModel> {
