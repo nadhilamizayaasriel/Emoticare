@@ -69,10 +69,10 @@
         android:layout_marginTop="16dp"/>
 
     <Button
-        android:id="@+id/btnSignin"
+        android:id="@+id/btnRegister"
         android:layout_width="246dp"
         android:layout_height="66dp"
-        android:text="@string/signin"
+        android:text="@string/register"
         android:textColor="@color/blue"
         android:background="@drawable/btn_transparent"
         android:backgroundTint="@color/blue"

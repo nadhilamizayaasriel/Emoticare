@@ -2,14 +2,23 @@ package com.example.emoticare.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.method.LinkMovementMethod
+import android.text.style.ClickableSpan
+import android.text.style.ForegroundColorSpan
 import android.view.View
+import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.emoticare.MainActivity
+import com.example.emoticare.R
 import com.example.emoticare.ViewModelFactory
 import com.example.emoticare.data.pref.UserModel
 import com.example.emoticare.databinding.ActivityLoginBinding
+import com.example.emoticare.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
     private val viewModel by viewModels<LoginViewModel> {
@@ -22,7 +31,32 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupLoginText()
         setupAction()
+    }
+
+    private fun setupLoginText() {
+        val textView: TextView = binding.registerClick
+        val text = getString(R.string.register)
+        val spannableString = SpannableString(text)
+        val customColor = ContextCompat.getColor(this, R.color.blue)
+        val colorSpan = ForegroundColorSpan(customColor)
+
+        spannableString.setSpan(
+            colorSpan,
+            0,
+            text.length,
+            Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        spannableString.setSpan(object : ClickableSpan() {
+            override fun onClick(widget: View) {
+                startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
+            }
+        }, 0, text.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+        textView.text = spannableString
+        textView.movementMethod = LinkMovementMethod.getInstance()
     }
 
     override fun onResume() {
@@ -36,8 +70,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupAction() {
         binding.loginButton.setOnClickListener {
-            val email = binding.email.text.toString()
-            val password = binding.password.text.toString()
+            val email = binding.emailInput.text.toString()
+            val password = binding.passwordInput.text.toString()
 
             viewModel.login(email, password)
         }
@@ -47,7 +81,8 @@ class LoginActivity : AppCompatActivity() {
                 // Save session if login is successful
                 viewModel.saveSession(
                     UserModel(
-                        email = binding.email.text.toString(),
+                        name =  result.loginResult?.name.toString() ,
+                        email = binding.emailInput.text.toString(),
                         token = result.loginResult?.token.toString(),
                         isLogin = true
                     )

@@ -1,5 +1,6 @@
 package com.example.emoticare.register
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -29,24 +30,19 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val userPreference = UserPreference.getInstance(dataStore)
-
         setupAction()
+        playAnimation()
+
 
         viewModel.isLoading.observe(this) { isLoading ->
             binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
         }
-
-        viewModel.registerResponse.observe(this) { registerResponse ->
+        viewModel.registerResponseLiveData.observe(this) { registerResponse ->
             if (!registerResponse.error!!) {
                 //tambahan
-                val name = binding.name.text.toString()
-                val email = binding.email.text.toString()
-                val password = binding.password.text.toString()
-                viewModel.register(name, email, password)
                 AlertDialog.Builder(this).apply {
                     setTitle("Success!")
-                    setMessage("your account is ready, Lets login and upload story.")
+                    setMessage("Yeay your account has already, let's login.")
                     setPositiveButton("Next") { _, _ ->
                         startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
                         finish()
@@ -77,13 +73,21 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-
     private fun setupAction() {
-        binding.signinButton.setOnClickListener {
-            val name = binding.name.text.toString()
-            val email = binding.email.text.toString()
-            val password = binding.password.text.toString()
+        binding.registerBtn.setOnClickListener {
+            val name = binding.nameInput.text.toString()
+            val email = binding.emailInput.text.toString()
+            val password = binding.passwordInput.text.toString()
             viewModel.register(name, email, password)
         }
+    }
+
+    private fun playAnimation() {
+        ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_X, -30f, 30f).apply {
+            duration = 6000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
+
     }
 }

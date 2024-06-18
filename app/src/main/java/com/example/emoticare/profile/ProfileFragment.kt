@@ -32,6 +32,8 @@ class ProfileFragment : Fragment() {
             val tvEmail = view.findViewById<TextView>(R.id.textViewEmail)
             val tvName = view.findViewById<TextView>(R.id.textViewName)
             tvEmail.text = viewModel.getSession().email
+            tvName.text = viewModel.getSession().name
+
         }
 
         setupAction(view)

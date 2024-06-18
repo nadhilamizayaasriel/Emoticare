@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import android.widget.CalendarView
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -37,6 +38,14 @@ class HomeFragment : Fragment() {
         setupCalendar()
         historyButton(view)
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        if (viewModel.getSession().isLogin) {
+            val tvName = view.findViewById<TextView>(R.id.greetings)
+            tvName.text = "Hello " + viewModel.getSession().name
+        }
     }
 
     private fun historyButton(view: View) {
