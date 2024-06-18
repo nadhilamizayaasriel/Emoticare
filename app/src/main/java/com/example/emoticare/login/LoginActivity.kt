@@ -52,7 +52,6 @@ class LoginActivity : AppCompatActivity() {
                         isLogin = true
                     )
                 )
-                val action = Intent(this, MainActivity::class.java)
                 AlertDialog.Builder(this).apply {
                     setTitle("Yeay!")
                     setMessage("Login success.")

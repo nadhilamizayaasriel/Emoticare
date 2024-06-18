@@ -23,6 +23,7 @@ import retrofit2.Response
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
+
 class ChatFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
@@ -64,7 +65,6 @@ class ChatFragment : Fragment() {
             if (messageText.isNotEmpty()) {
                 sendMessage(messageText)
                 messageInput.setText("")
-//                chatAdapter.addMessage(Message(messageText, true))
             }
         }
     }
@@ -79,7 +79,12 @@ class ChatFragment : Fragment() {
                 if (response.isSuccessful && response.body() != null) {
                     val chatResponse = response.body()
                     chatResponse?.let {
-                        it.response?.let { it1 -> updateChat(it1, true) }  // True for responses received from server
+                        it.response?.let { it1 ->
+                            updateChat(
+                                it1,
+                                true
+                            )
+                        }
                     }
                 } else {
                     Log.e("ChatFragment", "Response error: ${response.errorBody()?.string()}")
@@ -90,7 +95,7 @@ class ChatFragment : Fragment() {
                 Log.e("ChatFragment", "Network error: ${t.message}")
             }
         })
-        updateChat(message, false)  // False for messages sent by the user
+        updateChat(message, false)
     }
 
     private fun updateChat(response: String, isSent: Boolean) {
@@ -98,34 +103,6 @@ class ChatFragment : Fragment() {
         chatAdapter.addMessage(message)
         recyclerView.scrollToPosition(chatAdapter.itemCount - 1)
     }
-
-//    private fun sendMessage(message: String) {
-//        val mediaType = "application/json; charset=utf-8".toMediaType()
-//        val requestBody = "{\"message\":\"$message\"}".toRequestBody(mediaType)
-//
-//        val call = ApiConfig.getApiService().sendChatResponse(requestBody)
-//        call.enqueue(object : Callback<ChatResponse> {
-//            override fun onResponse(call: Call<ChatResponse>, response: Response<ChatResponse>) {
-//                if (response.isSuccessful && response.body() != null) {
-//                    val chatResponse = response.body()
-//                    chatResponse?.let {
-//                        it.response?.let { it1 -> updateChat(it1) }
-//                    }
-//                } else {
-//                    Log.e("ChatFragment", "Response error: ${response.errorBody()?.string()}")
-//                }
-//            }
-//
-//            override fun onFailure(call: Call<ChatResponse>, t: Throwable) {
-//                Log.e("ChatFragment", "Network error: ${t.message}")
-//            }
-//        })
-//    }
-//
-//    private fun updateChat(response: String) {
-//        chatAdapter.addMessage(response)
-//        recyclerView.scrollToPosition(chatAdapter.itemCount - 1)
-//    }
 
     companion object {
         @JvmStatic

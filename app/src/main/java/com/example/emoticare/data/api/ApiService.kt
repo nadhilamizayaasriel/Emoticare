@@ -2,6 +2,7 @@ package com.example.emoticare.data.api
 
 import com.example.emoticare.data.response.ChatResponse
 import com.example.emoticare.data.response.LoginResponse
+import com.example.emoticare.data.response.MoodHistoryResponse
 import com.example.emoticare.data.response.MoodResponse
 import com.example.emoticare.data.response.RegisterResponse
 import okhttp3.RequestBody
@@ -54,7 +55,6 @@ interface ApiService {
         @Path("date") date: String
     ): Call<MoodResponse>
 
-    @GET("mood")
-    fun getAllMoods(): Call<List<MoodResponse>>
-
+    @GET("mood/get/all")
+    fun getAllMoods(): Call<MoodHistoryResponse>
 }

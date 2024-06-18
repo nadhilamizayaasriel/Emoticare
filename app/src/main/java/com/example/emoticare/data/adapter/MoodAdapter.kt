@@ -4,9 +4,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.emoticare.R
-import com.example.emoticare.data.response.MoodResponse
+import com.example.emoticare.data.response.MoodHistoryItem
+import java.text.SimpleDateFormat
+import java.util.Locale
 
-class MoodAdapter(private var moods: List<MoodResponse>) : RecyclerView.Adapter<MoodAdapter.MoodViewHolder>() {
+class MoodAdapter(private var moods: List<MoodHistoryItem>) : RecyclerView.Adapter<MoodAdapter.MoodViewHolder>() {
 
     class MoodViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val dateTextView: TextView = view.findViewById(R.id.dateTextView)
@@ -20,13 +22,25 @@ class MoodAdapter(private var moods: List<MoodResponse>) : RecyclerView.Adapter<
 
     override fun onBindViewHolder(holder: MoodViewHolder, position: Int) {
         val mood = moods[position]
-        holder.dateTextView.text = mood.date
         holder.moodTextView.text = mood.mood
+        holder.dateTextView.text = formatDate(mood.createdAt)
+    }
+
+    private fun formatDate(dateStr: String?): String {
+        dateStr ?: return "No Date"
+        val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault())
+        val outputFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+        return try {
+            val date = inputFormat.parse(dateStr)
+            outputFormat.format(date)
+        } catch (e: Exception) {
+            "Invalid Date"
+        }
     }
 
     override fun getItemCount() = moods.size
 
-    fun updateData(newMoods: List<MoodResponse>) {
+    fun updateMoods(newMoods: List<MoodHistoryItem>) {
         moods = newMoods
         notifyDataSetChanged()
     }

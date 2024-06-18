@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
 import android.widget.CalendarView
 import android.widget.ImageButton
@@ -42,17 +41,15 @@ class HomeFragment : Fragment() {
     private fun historyButton(view: View) {
         val historyButton = view.findViewById<ImageButton>(R.id.history)
         historyButton?.setOnClickListener {
-            // Make sure the container ID is correct, it should be the ID of your fragment container in the activity's layout
             val fragment = HistoryFragment()
             requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.container, fragment) // Use the correct ID for your fragment container
+                .replace(R.id.container, fragment)
                 .addToBackStack(null)
                 .commit()
         }
     }
 
     private fun setupRecyclerView() {
-        // Inisialisasi RecyclerView dengan adapter dan layout manager
         articlesRecyclerView.layoutManager = LinearLayoutManager(context)
         articlesRecyclerView.adapter =
             ArticlesAdapter(listOf("Article 1", "Article 2", "Article 3"))
@@ -63,8 +60,8 @@ class HomeFragment : Fragment() {
             val options = arrayOf("Natural", "Happy", "Sad")
             AlertDialog.Builder(context).apply {
                 setTitle("Select Your Mood on $formattedDate")
-                setItems(options) { dialog, which ->
-                    val selectedMood = options[which].toLowerCase()
+                setItems(options) { _, which ->
+                    val selectedMood = options[which]
                     checkAndSetMood(selectedMood, formattedDate)
                 }
                 show()

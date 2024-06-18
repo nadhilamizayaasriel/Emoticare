@@ -11,13 +11,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.emoticare.R
 import com.example.emoticare.data.api.ApiConfig
-import com.example.emoticare.data.response.MoodResponse
+import com.example.emoticare.data.di.Injection
+import com.example.emoticare.data.response.MoodHistoryResponse
+import com.example.emoticare.login.LoginViewModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class HistoryFragment : Fragment() {
-
+    private lateinit var viewModel: LoginViewModel
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: MoodAdapter
 
@@ -28,6 +30,7 @@ class HistoryFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_history, container, false)
         recyclerView = view.findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(context)
+        viewModel = LoginViewModel(Injection.provideRepository(requireContext()))
         adapter = MoodAdapter(emptyList())
         recyclerView.adapter = adapter
         fetchMoods()
@@ -35,19 +38,20 @@ class HistoryFragment : Fragment() {
     }
 
     private fun fetchMoods() {
-        val apiService = ApiConfig.getAuthenticatedApiService(token = "token")
-        apiService.getAllMoods().enqueue(object : Callback<List<MoodResponse>> {
-            override fun onResponse(call: Call<List<MoodResponse>>, response: Response<List<MoodResponse>>) {
-                if (response.isSuccessful) {
-                    adapter = MoodAdapter(response.body()!!)
-                    recyclerView.adapter = adapter
+        val apiService = ApiConfig.getAuthenticatedApiService(viewModel.getSession().token)
+        apiService.getAllMoods().enqueue(object : Callback<MoodHistoryResponse> {
+            override fun onResponse(call: Call<MoodHistoryResponse>, response: Response<MoodHistoryResponse>) {
+                if (response.isSuccessful && response.body() != null) {
+                    response.body()?.moodHistory?.let { history ->
+                        adapter.updateMoods(history.filterNotNull())
+                    }
                 } else {
-                    Toast.makeText(context, "Failed to retrieve moods", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Failed to retrieve mood history: ${response.errorBody()?.string()}", Toast.LENGTH_SHORT).show()
                 }
             }
 
-            override fun onFailure(call: Call<List<MoodResponse>>, t: Throwable) {
-                Toast.makeText(context, "Error loading moods: ${t.message}", Toast.LENGTH_SHORT).show()
+            override fun onFailure(call: Call<MoodHistoryResponse>, t: Throwable) {
+                Toast.makeText(context, "Network error: ${t.message}", Toast.LENGTH_SHORT).show()
             }
         })
     }

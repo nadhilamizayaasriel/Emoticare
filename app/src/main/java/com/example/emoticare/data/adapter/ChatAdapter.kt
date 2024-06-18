@@ -11,9 +11,9 @@ import com.example.emoticare.data.api.Message
 class ChatAdapter(private val messages: MutableList<Message>) : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
     override fun getItemViewType(position: Int): Int {
         return if (messages[position].isSent) {
-            R.layout.item_message_received  // Use sent layout for responses
+            R.layout.item_message_received
         } else {
-            R.layout.item_message_sent  // Use received layout for sent messages
+            R.layout.item_message_sent
         }
     }
 
