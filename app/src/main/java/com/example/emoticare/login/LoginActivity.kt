@@ -13,7 +13,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.emoticare.MainActivity
+import com.example.emoticare.main.MainActivity
 import com.example.emoticare.R
 import com.example.emoticare.ViewModelFactory
 import com.example.emoticare.data.pref.UserModel

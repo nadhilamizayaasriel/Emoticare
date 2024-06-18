@@ -9,7 +9,7 @@ import android.widget.Button
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
-import com.example.emoticare.MainActivity
+import com.example.emoticare.main.MainActivity
 import com.example.emoticare.R
 import com.example.emoticare.ViewModelFactory
 import com.example.emoticare.login.LoginActivity

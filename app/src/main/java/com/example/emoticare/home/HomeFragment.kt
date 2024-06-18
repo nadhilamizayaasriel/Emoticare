@@ -16,6 +16,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.emoticare.R
+import com.example.emoticare.darkmode.DarkModeActivity
 import com.example.emoticare.data.api.ApiConfig
 import com.example.emoticare.data.response.MoodResponse
 import com.example.emoticare.data.di.Injection
@@ -43,6 +44,14 @@ class HomeFragment : Fragment() {
         setupCalendar()
         historyButton(view)
         fetchArticles()
+
+        val myButton: ImageButton = view.findViewById(R.id.darkMode)
+        myButton.setOnClickListener {
+            val intent = Intent(activity, DarkModeActivity::class.java).apply {
+                putExtra("key", "value")
+            }
+            startActivity(intent)
+        }
         return view
     }
 

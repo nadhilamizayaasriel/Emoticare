@@ -7,10 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.viewModels
 import com.example.emoticare.R
 import com.example.emoticare.ViewModelFactory
+import com.example.emoticare.darkmode.DarkModeActivity
 import com.example.emoticare.onboarding.OnboardingActivity
 
 class ProfileFragment : Fragment() {
@@ -22,7 +24,16 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+
+        val myButton: ImageButton = view.findViewById(R.id.darkMode)
+        myButton.setOnClickListener {
+            val intent = Intent(activity, DarkModeActivity::class.java).apply {
+                putExtra("key", "value")
+            }
+            startActivity(intent)
+        }
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

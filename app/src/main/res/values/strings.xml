@@ -15,4 +15,5 @@
     <string name="started">Get Started</string>
     <string name="hint_name">Name</string>
     <string name="welcome">Welcome to</string>
+    <string name="dark_mode">Dark Mode</string>
 </resources>
