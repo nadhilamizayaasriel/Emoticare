@@ -3,15 +3,11 @@ package com.example.emoticare.splash
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.Observer
-import com.example.emoticare.MainActivity
+import com.example.emoticare.main.MainActivity
 import com.example.emoticare.R
-import com.example.emoticare.login.LoginActivity
 import com.example.emoticare.onboarding.OnboardingActivity
 
 class SplashActivty : AppCompatActivity() {

@@ -1,6 +1,8 @@
 package com.example.emoticare.home
 
 import android.app.AlertDialog
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,13 +10,16 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import android.widget.CalendarView
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.emoticare.R
+import com.example.emoticare.darkmode.DarkModeActivity
 import com.example.emoticare.data.api.ApiConfig
 import com.example.emoticare.data.response.MoodResponse
 import com.example.emoticare.data.di.Injection
+import com.example.emoticare.data.pref.Article
 import com.example.emoticare.login.LoginViewModel
 import retrofit2.Call
 import retrofit2.Callback
@@ -23,6 +28,8 @@ class HomeFragment : Fragment() {
     private lateinit var viewModel: LoginViewModel
     private lateinit var calendarView: CalendarView
     private lateinit var articlesRecyclerView: RecyclerView
+    private lateinit var articlesAdapter: ArticlesAdapter
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,7 +42,24 @@ class HomeFragment : Fragment() {
         setupRecyclerView()
         setupCalendar()
         historyButton(view)
+        fetchArticles()
+
+        val myButton: ImageButton = view.findViewById(R.id.darkMode)
+        myButton.setOnClickListener {
+            val intent = Intent(activity, DarkModeActivity::class.java).apply {
+                putExtra("key", "value")
+            }
+            startActivity(intent)
+        }
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        if (viewModel.getSession().isLogin) {
+            val tvName = view.findViewById<TextView>(R.id.greetings)
+            tvName.text = "Hello " + viewModel.getSession().name
+        }
     }
 
     private fun historyButton(view: View) {
@@ -50,9 +74,38 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
+        articlesAdapter = ArticlesAdapter(emptyList()) // Inisialisasi adapter dengan list kosong awal
+        articlesAdapter.setOnItemClickListener { article ->
+            openArticleUrl(article.url)
+        }
         articlesRecyclerView.layoutManager = LinearLayoutManager(context)
-        articlesRecyclerView.adapter =
-            ArticlesAdapter(listOf("Article 1", "Article 2", "Article 3"))
+        articlesRecyclerView.adapter = articlesAdapter
+    }
+
+    private fun fetchArticles() {
+        val client = ApiConfig.getDataArticle().getArticles()
+        client.enqueue(object : Callback<List<Article>> {
+            override fun onResponse(call: Call<List<Article>>, response: Response<List<Article>>) {
+                if (response.isSuccessful) {
+                    val articles = response.body()
+                    if (articles != null) {
+                        articlesAdapter.updateData(articles)
+                    }
+                } else {
+                    // Handle error
+                }
+            }
+
+            override fun onFailure(call: Call<List<Article>>, t: Throwable) {
+                // Handle error
+            }
+        })
+    }
+
+    private fun openArticleUrl(url: String) {
+        val articleUri = Uri.parse(url)
+        val intent = Intent(Intent.ACTION_VIEW, articleUri)
+        startActivity(intent)
     }
     private fun setupCalendar() {
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->

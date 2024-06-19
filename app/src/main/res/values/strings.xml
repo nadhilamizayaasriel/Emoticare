@@ -6,7 +6,7 @@
     <string name="greetings">Hello $name</string>
     <string name="question">How are you feeling today?</string>
     <string name="title_article">Explore Article</string>
-    <string name="signin">Sign In</string>
+    <string name="register">Register</string>
     <string name="login">Login</string>
     <string name="subtitle">Your Emotional \Support Buddy</string>
     <string name="hint_pass">Password</string>
@@ -16,4 +16,5 @@
     <string name="started">Get Started</string>
     <string name="hint_name">Name</string>
     <string name="welcome">Welcome to</string>
+    <string name="dark_mode">Dark Mode</string>
 </resources>

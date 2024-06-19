@@ -51,7 +51,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/email_input"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableStart="@drawable/baseline_email_24"
@@ -62,7 +62,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/password_input"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableStart="@drawable/key_icon"
@@ -72,15 +72,6 @@
             android:textColor="@color/black"
             android:inputType="textPassword" />
 
-        <TextView
-            android:id="@+id/forgetPass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginBottom="16dp"
-            android:text="@string/forget_pass"
-            android:textSize="12sp"
-            android:textColor="@color/blue" />
 
         <Button
             android:id="@+id/login_button"
@@ -109,10 +100,11 @@
                 android:textColor="@color/blue" />
 
             <TextView
+                android:id="@+id/registerClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:text="@string/signin"
+                android:text="@string/register"
                 android:textStyle="bold"
                 android:textColor="@color/blue" />
         </LinearLayout>

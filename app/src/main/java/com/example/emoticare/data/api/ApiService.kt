@@ -1,5 +1,6 @@
 package com.example.emoticare.data.api
 
+import com.example.emoticare.data.pref.Article
 import com.example.emoticare.data.response.ChatResponse
 import com.example.emoticare.data.response.LoginResponse
 import com.example.emoticare.data.response.MoodHistoryResponse
@@ -57,4 +58,6 @@ interface ApiService {
 
     @GET("mood/get/all")
     fun getAllMoods(): Call<MoodHistoryResponse>
+    @GET("article.json")
+    fun getArticles(): Call<List<Article>>
 }

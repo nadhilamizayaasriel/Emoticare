@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -22,6 +23,7 @@ class HistoryFragment : Fragment() {
     private lateinit var viewModel: LoginViewModel
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: MoodAdapter
+    private lateinit var progressBar: ProgressBar
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +33,7 @@ class HistoryFragment : Fragment() {
         recyclerView = view.findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(context)
         viewModel = LoginViewModel(Injection.provideRepository(requireContext()))
+        progressBar = view.findViewById(R.id.progressBar)
         adapter = MoodAdapter(emptyList())
         recyclerView.adapter = adapter
         fetchMoods()
@@ -38,9 +41,11 @@ class HistoryFragment : Fragment() {
     }
 
     private fun fetchMoods() {
+        showLoading(true)
         val apiService = ApiConfig.getAuthenticatedApiService(viewModel.getSession().token)
         apiService.getAllMoods().enqueue(object : Callback<MoodHistoryResponse> {
             override fun onResponse(call: Call<MoodHistoryResponse>, response: Response<MoodHistoryResponse>) {
+                showLoading(false)
                 if (response.isSuccessful && response.body() != null) {
                     response.body()?.moodHistory?.let { history ->
                         adapter.updateMoods(history.filterNotNull())
@@ -51,8 +56,12 @@ class HistoryFragment : Fragment() {
             }
 
             override fun onFailure(call: Call<MoodHistoryResponse>, t: Throwable) {
+                showLoading(false)
                 Toast.makeText(context, "Network error: ${t.message}", Toast.LENGTH_SHORT).show()
             }
         })
+    }
+    private fun showLoading(show: Boolean) {
+        progressBar.visibility = if (show) View.VISIBLE else View.GONE
     }
 }

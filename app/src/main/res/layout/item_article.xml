@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/rounder_border"
     android:orientation="horizontal"
+    android:layout_marginTop="10dp"
     android:padding="16dp">
 
     <ImageView
@@ -12,6 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginRight="16dp"
+        android:scaleType="centerCrop"
         android:src="@color/blue" />
 
     <LinearLayout

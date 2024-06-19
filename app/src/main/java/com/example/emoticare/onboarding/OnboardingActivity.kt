@@ -9,7 +9,7 @@ import android.widget.Button
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
-import com.example.emoticare.MainActivity
+import com.example.emoticare.main.MainActivity
 import com.example.emoticare.R
 import com.example.emoticare.ViewModelFactory
 import com.example.emoticare.login.LoginActivity
@@ -69,7 +69,7 @@ class OnboardingActivity : AppCompatActivity() {
 
     private fun setupAction() {
         val btnLogin = findViewById<Button>(R.id.btnLogin)
-        val btnSignIn = findViewById<Button>(R.id.btnSignin)
+        val btnRegister = findViewById<Button>(R.id.btnRegister)
 
         btnLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
@@ -77,10 +77,10 @@ class OnboardingActivity : AppCompatActivity() {
             Log.d("btnLogin", "Login button clicked")
         }
 
-        btnSignIn.setOnClickListener {
+        btnRegister.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
-            Log.d("btnSignIn", "Sign in button clicked")
+            Log.d("btnRegister", "Sign in button clicked")
         }
     }
 }

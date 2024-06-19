@@ -1,21 +1,36 @@
-package com.example.emoticare
+package com.example.emoticare.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
+import com.example.emoticare.R
+import com.example.emoticare.ViewModelFactory
 import com.example.emoticare.chat.ChatFragment
 import com.example.emoticare.home.HomeFragment
 import com.example.emoticare.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-
+    private val mainViewModel: MainViewModel by viewModels {
+        ViewModelFactory.getInstance(
+            application
+        )}
     private lateinit var bottomNav: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupBottomNav()
+
+        mainViewModel.getThemeSetting().observe(this) { darkMode: Boolean ->
+            if (darkMode) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
     }
 
     private fun setupBottomNav(){
