@@ -25,7 +25,7 @@ EmotiCare is an Android-based application featuring an integrated chatbot. The a
 
 
     
-Download and install the EmotiCare APK file into your mobile device / emulator [here](https://drive.google.com/file/d/1n-Ci_KwWZqvI3y1uvHlQsqOt_0voan6f/view)
+Download and install the EmotiCare APK file into your mobile device / emulator [here](https://bit.ly/EmotiCare)
 Or, you can try building the APK yourself by downloading this project into your local directory, open it in Android Studio, wait for Gradle sync-ing and Build APK from there.
 ## Contact Us
 
