@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\activity_dark_mode.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_dark_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\mood_item.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\mood_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\fragment_history.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\fragment_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\item_message_received.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\item_message_received.xml"
+    },
+    {
+        "merged": "com.example.emoticare.app-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "com.example.emoticare.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\activity_onboarding.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\fragment_chat.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\item_article.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\item_article.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\item_onboarding.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\item_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\item_message_sent.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\item_message_sent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\activity_splash_activty.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_splash_activty.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-mergeDebugResources-45:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_login.xml"
+    }
+]

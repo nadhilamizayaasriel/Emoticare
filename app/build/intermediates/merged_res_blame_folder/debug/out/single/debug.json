@@ -1,0 +1,274 @@
+[
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_login_rectangle.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\login_rectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_activity_onboarding.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\menu\\nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_activity_splash_activty.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_splash_activty.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_rounder_border.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\rounder_border.xml"
+    },
+    {
+        "merged": "com.example.emoticare.app-merged_res-46:/layout_activity_main.xml.flat",
+        "source": "com.example.emoticare.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_onboarding_image_3.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\onboarding_image_3.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_activity_dark_mode.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_dark_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_send_baseline.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\send_baseline.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_item_message_sent.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\item_message_sent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_btn_send.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\btn_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_idcard.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\idcard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_circle_background.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\circle_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_profile_background.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\profile_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_chat_bg.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\chat_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_item_onboarding.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\item_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_profil.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\profil.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_history_baseline.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\history_baseline.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_profile_circle.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\profile_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_picture.jpg.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\picture.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_chat.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\chat.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_mood_item.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\mood_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_chat_bubble.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\chat_bubble.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-anydpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_dark_background.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\dark_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_chat_bubble_received.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\chat_bubble_received.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_onboarding_image_4.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\onboarding_image_4.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_home.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\home.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_onboarding_image_1.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\onboarding_image_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_logoo.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\logoo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_fragment_chat.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_baseline_error_outline_24.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\baseline_error_outline_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_profil_outlier.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\profil_outlier.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_item_article.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\item_article.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_item_message_received.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\item_message_received.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_back_icon.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\back_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_onboarding_image_5.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\onboarding_image_5.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_btn_transparent.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\btn_transparent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-anydpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_key_icon.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\key_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_fragment_history.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\fragment_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_onboarding_image_2.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\onboarding_image_2.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_btn_non_transparent.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\btn_non_transparent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_profil_inlier.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\profil_inlier.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_baseline_dark_mode_24.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\baseline_dark_mode_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\drawable_background.png.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\drawable\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Fina Keiza Arismana\\.gradle\\daemon\\8.2\\com.example.emoticare.app-main-48:\\mipmap-xxhdpi\\ic_launcher.webp"
+    }
+]

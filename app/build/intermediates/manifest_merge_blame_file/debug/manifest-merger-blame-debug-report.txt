@@ -1,0 +1,181 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.emoticare"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="31"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:5:5-67
+11-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.13.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\d16141837b1dfced26fb2d5628bc2c81\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+14        android:name="com.example.emoticare.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.13.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\d16141837b1dfced26fb2d5628bc2c81\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.13.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\d16141837b1dfced26fb2d5628bc2c81\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.example.emoticare.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.13.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\d16141837b1dfced26fb2d5628bc2c81\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.13.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\d16141837b1dfced26fb2d5628bc2c81\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:7:5-49:19
+20        android:allowBackup="true"
+20-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:8:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.13.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\d16141837b1dfced26fb2d5628bc2c81\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:9:9-65
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:10:9-54
+26        android:icon="@drawable/logo"
+26-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:11:9-38
+27        android:label="@string/app_name"
+27-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:12:9-41
+28        android:networkSecurityConfig="@xml/network_security_config"
+28-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:13:9-69
+29        android:roundIcon="@drawable/logo"
+29-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:14:9-43
+30        android:supportsRtl="true"
+30-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:15:9-35
+31        android:theme="@style/Theme.EmotiCare"
+31-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:16:9-47
+32        android:usesCleartextTraffic="true" >
+32-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:17:9-44
+33        <activity
+33-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:19:9-21:40
+34            android:name="com.example.emoticare.darkmode.DarkModeActivity"
+34-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:20:13-54
+35            android:exported="false" />
+35-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:21:13-37
+36        <activity
+36-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:22:9-24:40
+37            android:name="com.example.emoticare.register.RegisterActivity"
+37-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:23:13-54
+38            android:exported="false" />
+38-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:24:13-37
+39        <activity
+39-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:25:9-27:40
+40            android:name="com.example.emoticare.login.LoginActivity"
+40-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:26:13-48
+41            android:exported="false" />
+41-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:27:13-37
+42        <activity
+42-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:28:9-30:40
+43            android:name="com.example.emoticare.onboarding.ViewPagerAdapter"
+43-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:29:13-56
+44            android:exported="false" />
+44-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:30:13-37
+45        <activity
+45-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:31:9-33:40
+46            android:name="com.example.emoticare.onboarding.OnboardingActivity"
+46-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:32:13-58
+47            android:exported="false" />
+47-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:33:13-37
+48        <activity
+48-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:34:9-36:40
+49            android:name="com.example.emoticare.home.HomeActivity"
+49-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:35:13-46
+50            android:exported="false" />
+50-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:36:13-37
+51        <activity
+51-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:37:9-44:20
+52            android:name="com.example.emoticare.splash.SplashActivty"
+52-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:38:13-49
+53            android:exported="true" >
+53-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:39:13-36
+54            <intent-filter>
+54-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:40:13-43:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:41:17-69
+55-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:41:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:42:17-77
+57-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:42:27-74
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:45:9-48:58
+61            android:name="com.example.emoticare.main.MainActivity"
+61-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:46:13-46
+62            android:exported="true"
+62-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:47:13-36
+63            android:windowSoftInputMode="adjustResize" />
+63-->E:\BANGKIT - MD\capstone project\project\app\src\main\AndroidManifest.xml:48:13-55
+64
+65        <provider
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+66            android:name="androidx.startup.InitializationProvider"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+67            android:authorities="com.example.emoticare.androidx-startup"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+68            android:exported="false" >
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+69            <meta-data
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+71                android:value="androidx.startup" />
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\f65ecc3788deedbb02a8d14b7a9fa4dd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\f65ecc3788deedbb02a8d14b7a9fa4dd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+74                android:value="androidx.startup" />
+74-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\f65ecc3788deedbb02a8d14b7a9fa4dd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+75            <meta-data
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+77                android:value="androidx.startup" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+78        </provider>
+79
+80        <receiver
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+81            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+82            android:directBootAware="false"
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+83            android:enabled="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+84            android:exported="true"
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+85            android:permission="android.permission.DUMP" >
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+87                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+90                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+93                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+96                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\53e5439126cfd03d1d0ad7a58a0140ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+97            </intent-filter>
+98        </receiver>
+99    </application>
+100
+101</manifest>

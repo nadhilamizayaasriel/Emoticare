@@ -1,0 +1,6 @@
+com.example.emoticare.test.app-annotation-experimental-1.4.0-0 C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\935ca2afead505062205016701139742\transformed\annotation-experimental-1.4.0\res
+com.example.emoticare.test.app-core-1.5.0-1 C:\Users\Fina Keiza Arismana\.gradle\caches\transforms-3\a398584d6b5cd441ab396e8538531035\transformed\core-1.5.0\res
+com.example.emoticare.test.app-androidTest-2 E:\BANGKIT - MD\capstone project\project\app\build\generated\res\resValues\androidTest\debug
+com.example.emoticare.test.app-mergeDebugAndroidTestResources-3 E:\BANGKIT - MD\capstone project\project\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.emoticare.test.app-mergeDebugAndroidTestResources-4 E:\BANGKIT - MD\capstone project\project\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.emoticare.test.app-merged_res-5 E:\BANGKIT - MD\capstone project\project\app\build\intermediates\merged_res\debugAndroidTest

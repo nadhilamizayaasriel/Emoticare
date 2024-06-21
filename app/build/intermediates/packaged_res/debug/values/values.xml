@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue">#7EA1FF</color>
+    <color name="dark_gray">#777777</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="light_gray">#BBBBBB</color>
+    <color name="pink">#FFD1E3</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFAB7</color>
+    <color name="yellow_navbar">#FFF242</color>
+    <string name="app_name">EmotiCare</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="forget_pass">Forget Password?</string>
+    <string name="greetings">Hello $name</string>
+    <string name="have_account">Don\'t have an account?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_pass">Password</string>
+    <string name="history">History</string>
+    <string name="home">Home</string>
+    <string name="login">Login</string>
+    <string name="question">How are you feeling today?</string>
+    <string name="register">Register</string>
+    <string name="started">Get Started</string>
+    <string name="subtitle">Your Emotional \Support Buddy</string>
+    <string name="title_article">Explore Article</string>
+    <string name="welcome">Welcome to</string>
+    <style name="Base.Theme.EmotiCare" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:calendarTextColor">@color/black</item>
+        <item name="android:windowBackground">@drawable/background</item>
+
+    </style>
+    <style name="CalendarViewCustom" parent="android:Widget.Material.CalendarView">
+        
+        <item name="android:dateTextAppearance">@style/MyCalendarDateTextAppearance</item>
+    </style>
+    <style name="MyCalendarDateTextAppearance" parent="android:TextAppearance.Material.Small">
+        
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Theme.EmotiCare" parent="Base.Theme.EmotiCare"/>
+</resources>
