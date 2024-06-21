@@ -1,8 +1,7 @@
 
 # EmotiCare
 
-EmotiCare is an Android-based application featuring an integrated chatbot. The app is designed to act as a virtual companion for users who wish to talk and express their feelings.
-EmotiCare's chatbot responds empathetically and supportively, providing a safe space for users to express their emotions without fear of judgment or criticism.
+EmotiCare is an Android-based application featuring an integrated chatbot. The app is designed to act as a virtual companion for users who wish to talk and express their feelings. EmotiCare's chatbot responds empathetically and supportively, providing a safe space for users to express their emotions without fear of judgment or criticism.
 
 
 ![Logo](https://github.com/nadhilamizayaasriel/emoticaresjson/blob/716c7b1f66fea657ce2bb7918c50a724cbde2268/logo.png?raw=true)
@@ -22,6 +21,12 @@ EmotiCare's chatbot responds empathetically and supportively, providing a safe s
 - API
 - MVVM
 - Glide
+## Installation
+
+
+    
+Download and install the EmotiCare APK file into your mobile device / emulator [here](https://bit.ly/EmotiCare)
+Or, you can try building the APK yourself by downloading this project into your local directory, open it in Android Studio, wait for Gradle sync-ing and Build APK from there.
 ## Contact Us
 
 - [Fina Keiza Arismana A004D4KX3966](https://github.com/alweismiau)
