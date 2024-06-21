@@ -41,9 +41,7 @@ class ProfileFragment : Fragment() {
 
         if (viewModel.getSession().isLogin) {
             val tvEmail = view.findViewById<TextView>(R.id.textViewEmail)
-            val tvName = view.findViewById<TextView>(R.id.textViewName)
             tvEmail.text = viewModel.getSession().email
-            tvName.text = viewModel.getSession().name
 
         }
 

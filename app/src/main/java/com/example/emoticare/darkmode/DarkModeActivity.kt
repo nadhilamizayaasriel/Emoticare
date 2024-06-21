@@ -1,6 +1,7 @@
 package com.example.emoticare.darkmode
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.CompoundButton
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
@@ -39,11 +40,18 @@ class DarkModeActivity : AppCompatActivity() {
             modeViewModel.saveThemeSetting(isChecked)
         }
 
-        // Menginisialisasi tombol kembali dengan sintaks yang benar
-        val myButton: ImageButton = binding.backBtn
-        myButton.setOnClickListener {
-            // Menambahkan fungsi kembali ke halaman sebelumnya
-            onBackPressed()
+        setSupportActionBar(binding.topAppBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+
+            else -> return super.onOptionsItemSelected(item)
         }
     }
 }

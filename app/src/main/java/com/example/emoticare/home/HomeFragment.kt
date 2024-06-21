@@ -54,14 +54,6 @@ class HomeFragment : Fragment() {
         return view
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        if (viewModel.getSession().isLogin) {
-            val tvName = view.findViewById<TextView>(R.id.greetings)
-            tvName.text = "Hello " + viewModel.getSession().name
-        }
-    }
-
     private fun historyButton(view: View) {
         val historyButton = view.findViewById<ImageButton>(R.id.history)
         historyButton?.setOnClickListener {
