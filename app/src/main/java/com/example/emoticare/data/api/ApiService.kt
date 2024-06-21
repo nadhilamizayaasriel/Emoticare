@@ -25,7 +25,7 @@ interface ApiService {
     ): Call<ChatResponse>
 
     @FormUrlEncoded
-    @POST("register")
+    @POST("auth/register")
     suspend fun register(
         @Field("name") name: String,
         @Field("email") email: String,
@@ -33,7 +33,7 @@ interface ApiService {
     ): RegisterResponse
 
     @FormUrlEncoded
-    @POST("login")
+    @POST("auth/login")
     suspend fun login(
         @Field("email") email: String,
         @Field("password") password: String
